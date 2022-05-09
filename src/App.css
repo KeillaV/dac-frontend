@@ -1,13 +1,13 @@
-.App {
+.principal {
   background-color: burlywood;
   font-family: 'Courier New', Courier, monospace;
+  padding: 50px;
   height: 100vh;
   width: 100vw;
 }
 
 .cabecalho {
   color: brown;
-  padding: 25px;
   font-size: 50px;
   font-weight: bold;
   text-align: center;
@@ -27,22 +27,21 @@ label {
 }
 
 .box {
-  height: 30px;
+  height: 35px;
   width: 50%;
   padding-top: 12px;
   padding-bottom: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   text-align: center;
   border-color: brown;
   box-sizing: border-box;
   border-radius: 5px;
 }
 
-.box-number {
-  height: 30px;
-  width: 150px;
-  padding: 12px 20px;
+.small-box {
+  height: 35px;
+  width: 180px;
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
@@ -54,11 +53,11 @@ label {
 .botao {
   background-color: brown;
   color: beige;
+  height: 60px;
   width: 200px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
   text-align: center;
-  padding: 20px;
   margin: 80px;
   border-radius: 5px;
 }
