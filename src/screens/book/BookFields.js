@@ -15,8 +15,6 @@ export default class BookFields extends React.Component {
     }
     
     create = () => {
-        alert("Livro " + this.state.title + " cadastrado com sucesso!");
-        
         console.log("Título: " + this.state.title +
         "\nSinopse: " + this.state.summary +
         "\nGênero: " + this.state.genre +

@@ -10,8 +10,6 @@ export default class AuthorFields extends React.Component {
   }
 
   create = () => {
-    alert("Autor " + this.state.name + " cadastrado com sucesso!");
-
       console.log("Nome: " + this.state.name +
       "\nEstilo literário: " + this.state.literaryStyle +
       "\nData de nascimento: " + this.state.birthDate);

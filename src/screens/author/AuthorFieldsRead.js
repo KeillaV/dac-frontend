@@ -2,6 +2,8 @@ import React from 'react';
 import './Author.css';
 import { withRouter } from 'react-router-dom';
 
+import 'bootswatch/dist/minty/bootstrap.css';
+
 class AuthorFieldsRead extends React.Component {
 
   state = {
