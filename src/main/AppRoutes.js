@@ -1,7 +1,8 @@
 import React from "react";
 import { Route, BrowserRouter } from "react-router-dom";
 
-import Home from "../Home";
+import Login from "../screens/login/Login";
+import Home from "../screens/home/Home";
 import Author from "../screens/author/Author";
 import Book from "../screens/book/Book";
 import CreateAuthor from "../screens/author/CreateAuthor";
@@ -15,6 +16,7 @@ function AppRoutes() {
     return (
         <BrowserRouter>
             <Route component = { Home } path = "/" exact />
+            <Route component = { Login } path = "/login"  />
             <Route component = { Author } path = "/author/find" />
             <Route component = { CreateAuthor } path="/author/create" />
             <Route component = { UpdateAuthor } path="/author/update" />
