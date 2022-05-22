@@ -15,8 +15,12 @@ function NavBar() {
                 <NavBarItem href="/" label="Home" />
                 <NavBarItem href="/book/all" label="Listar livros"/>
                 <NavBarItem href="/book/create" label="Cadastrar livro"/>
+                <NavBarItem href="/book/delete" label="Excluir livro"/>
+                <NavBarItem href="/book/update/0" label="Atualizar livro"/>
                 <NavBarItem href="/author/all" label="Listar autores"/>
                 <NavBarItem href="/author/create" label="Cadastrar autor"/>
+                <NavBarItem href="/author/update/0" label="Atualizar autor"/>
+                <NavBarItem href="/author/delete" label="Excluir autor"/>
             </ul>
             </div>
         </div>

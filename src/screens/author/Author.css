@@ -43,3 +43,16 @@
     box-sizing: border-box;
     border-radius: 5px;
   }
+
+  table {
+    width: 95%;
+  }
+  
+  th {
+    text-decoration-color: brown;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  button {
+    margin: 5px;
+  }
