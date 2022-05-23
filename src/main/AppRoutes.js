@@ -3,8 +3,6 @@ import { Route, BrowserRouter } from "react-router-dom";
 
 import Login from "../screens/login/Login";
 import Home from "../screens/home/Home";
-import Author from "../screens/author/Author";
-import Book from "../screens/book/Book";
 import CreateAuthor from "../screens/author/CreateAuthor";
 import UpdateAuthor from "../screens/author/UpdateAuthor";
 import DeleteAuthor from "../screens/author/DeleteAuthor";
@@ -19,11 +17,9 @@ function AppRoutes() {
         <BrowserRouter>
             <Route component = { Home } path = "/" exact />
             <Route component = { Login } path = "/login"  />
-            <Route component = { Author } path = "/author/find" />
             <Route component = { CreateAuthor } path="/author/create" />
             <Route component = { UpdateAuthor } path="/author/update/:id" />
             <Route component = { DeleteAuthor } path="/author/delete" />
-            <Route component = { Book } path = "/book/find" />
             <Route component = { CreateBook } path="/book/create" />
             <Route component = { UpdateBook } path="/book/update/:id" />
             <Route component = { DeleteBook } path="/book/delete" />

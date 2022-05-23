@@ -33,11 +33,12 @@ export default class FindAllBook extends React.Component {
         ).then(response =>
             {
                 alert("Livro excluído com sucesso!");
+                console.log(response);
                 this.find();
             }
         ).catch(error =>
             {
-                alert(error.response);
+                alert("Ocorreu um erro ao excluir o livro, tente novamente!");
                 console.log(error.response);
             })
     }

@@ -15,6 +15,7 @@ export default class DeleteBook extends React.Component {
         ).then(response =>
             {
                 alert("Livro excluído com sucesso!");
+                console.log(response);
                 this.props.history.push("/book/all");
             }
         ).catch(error =>
@@ -40,6 +41,8 @@ export default class DeleteBook extends React.Component {
                 <input type="number" className="form-control-small" id="id" value={this.state.id} onChange={(e) => {this.setState({id: e.target.value})}}/>
               </div>
             </div>
+            <br/>
+            <br/>
             <button onClick={this.delete} type="button" className="btn btn-danger">Excluir</button>
             <button onClick={this.cancel} type="button" className="btn btn-light">Cancelar</button>
           </form>

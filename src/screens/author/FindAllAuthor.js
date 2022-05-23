@@ -38,7 +38,7 @@ export default class FindAllAuthor extends React.Component {
             }
         ).catch(error =>
             {
-                alert(error.response);
+                alert("Ocorreu um erro ao excluir o autor, tente novamente!");
                 console.log(error.response);
             }
         )

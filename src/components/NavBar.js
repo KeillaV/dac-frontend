@@ -13,10 +13,11 @@ function NavBar() {
             <div class="collapse navbar-collapse" id="navbarColor03">
             <ul class="navbar-nav me-auto">
                 <NavBarItem href="/" label="Home" />
+                <NavBarItem href="/login" label="Login" />
                 <NavBarItem href="/book/all" label="Listar livros"/>
                 <NavBarItem href="/book/create" label="Cadastrar livro"/>
-                <NavBarItem href="/book/delete" label="Excluir livro"/>
                 <NavBarItem href="/book/update/0" label="Atualizar livro"/>
+                <NavBarItem href="/book/delete" label="Excluir livro"/>
                 <NavBarItem href="/author/all" label="Listar autores"/>
                 <NavBarItem href="/author/create" label="Cadastrar autor"/>
                 <NavBarItem href="/author/update/0" label="Atualizar autor"/>
