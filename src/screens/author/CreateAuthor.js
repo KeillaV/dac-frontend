@@ -8,7 +8,7 @@ export default class CreateAuthor extends React.Component {
 
   state = {
     name: "",
-    literaryStyle: "",
+    literaryStyle: "",  
     birthDate: ""
   }
 

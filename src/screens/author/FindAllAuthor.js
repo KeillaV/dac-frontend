@@ -52,11 +52,14 @@ export default class FindAllAuthor extends React.Component {
         this.props.history.push(`/author/update/${authorId}`)
     }
 
+    componentDidMount() {
+        this.find();
+    }
+
     render() {
         return (
             <div class="principal">
                 <h1 class="cabecalho">Todos os autores</h1>
-                <button onClick={this.find} type="button" className="btn btn-light">Buscar autores</button>
                 <br/>
                 <br/>
                 <br/>

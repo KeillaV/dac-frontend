@@ -51,11 +51,14 @@ export default class FindAllBook extends React.Component {
         this.props.history.push(`/book/update/${authorId}`)
     }
 
+    componentDidMount() {
+        this.find();
+    }
+
     render() {
         return (
             <div class="principal">
                 <h1 class="cabecalho">Todos os livros</h1>
-                <button onClick={this.find} type="button" className="btn btn-light">Buscar livros</button>
                 <br/>
                 <br/>
                 <br/>

@@ -7,10 +7,29 @@ import axios from 'axios';
 export default class UpdateAuthor extends React.Component {
 
   state = {
-    id: 0,
+    id: "",
     name: "",
     literaryStyle: "",
     birthDate: ""
+  }
+
+  findById = (authorId) => {
+    axios.get(`http://localhost:8080/api/author/${authorId}`
+    ).then(response =>
+      {
+        const author = response.data;
+        const id = author.id;
+        const name = author.name;
+        const literaryStyle = author.literaryStyle;
+        const birthDate = author.birthDate;
+
+        this.setState({id, name, literaryStyle, birthDate});
+      }
+    ).catch(error =>
+      {
+        console.log(error.response);
+      }
+    );
   }
 
   update = () => {
@@ -24,7 +43,7 @@ export default class UpdateAuthor extends React.Component {
       {
         alert("Autor atualizado com sucesso!");
         console.log(response);
-        this.props.history.push("/book/all");
+        this.props.history.push("/author/all");
       }
     ).catch(error =>
       {
@@ -38,6 +57,12 @@ export default class UpdateAuthor extends React.Component {
     this.props.history.push("/author/all");
   }
 
+  componentDidMount() {
+    const params = this.props.match.params;
+    const id = params.id;
+    this.findById(id);
+  }
+
   render() {
     return (
     <div className="principal">
@@ -46,7 +71,7 @@ export default class UpdateAuthor extends React.Component {
         <div class="row d-flex justify-content-center">
           <div className="form-group">
             <label className="form-label mt-4" for="id">Id</label>
-            <input type="number" className="form-control-small" id="id" value={this.state.id} onChange={(e) => {this.setState({id: e.target.value})}}/>
+            <input type="number" className="form-control-small" id="id" value={this.state.id} disabled={true} onChange={(e) => {this.setState({id: e.target.value})}}/>
           </div>
 
           <div className="form-group">
